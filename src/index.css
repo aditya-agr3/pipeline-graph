@@ -129,6 +129,7 @@
     --shadow-node: 0 4px 12px hsl(210 12% 4% / 0.3), 0 2px 4px hsl(210 12% 4% / 0.2);
     --shadow-node-selected: 0 8px 24px hsl(214 84% 65% / 0.3), 0 4px 8px hsl(214 84% 65% / 0.2);
     --shadow-panel: 0 8px 32px hsl(210 12% 4% / 0.4);
+  }
 }
 
 @layer base {
