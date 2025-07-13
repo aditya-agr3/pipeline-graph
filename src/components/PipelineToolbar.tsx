@@ -31,17 +31,17 @@ export const PipelineToolbar: React.FC<PipelineToolbarProps> = ({
     <div className="flex items-center gap-2">
       {/* Add Node Dialog */}
       <Dialog open={isAddNodeOpen} onOpenChange={setIsAddNodeOpen}>
-        <DialogTrigger asChild>
-          <Tooltip>
-            <TooltipTrigger asChild>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <DialogTrigger asChild>
               <Button className="bg-primary hover:bg-primary/90">
                 <Plus className="w-4 h-4" />
                 Add Node
               </Button>
-            </TooltipTrigger>
-            <TooltipContent>Add a new node to the pipeline</TooltipContent>
-          </Tooltip>
-        </DialogTrigger>
+            </DialogTrigger>
+          </TooltipTrigger>
+          <TooltipContent>Add a new node to the pipeline</TooltipContent>
+        </Tooltip>
         <DialogContent>
           <DialogHeader>
             <DialogTitle>Add New Node</DialogTitle>
