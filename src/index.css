@@ -2,96 +2,133 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Pipeline Editor Design System - Professional workflow editor aesthetic */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Colors - Professional blue-gray palette */
+    --background: 210 20% 98%;
+    --foreground: 210 12% 16%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 12% 16%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 12% 16%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Pipeline Primary - Professional blue */
+    --primary: 214 84% 56%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 214 84% 70%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Pipeline Secondary - Clean gray */
+    --secondary: 210 16% 93%;
+    --secondary-foreground: 210 12% 16%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 16% 95%;
+    --muted-foreground: 210 8% 46%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 214 84% 90%;
+    --accent-foreground: 214 84% 20%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Status Colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Node Colors */
+    --node-default: 0 0% 100%;
+    --node-selected: 214 84% 56%;
+    --node-error: 0 84% 60%;
+    --node-success: 142 76% 36%;
 
-    --radius: 0.5rem;
+    /* Pipeline Specific */
+    --pipeline-grid: 210 16% 95%;
+    --pipeline-connection: 214 84% 56%;
+    --pipeline-connection-invalid: 0 84% 60%;
+    
+    --border: 210 20% 87%;
+    --input: 210 20% 87%;
+    --ring: 214 84% 56%;
 
-    --sidebar-background: 0 0% 98%;
+    --radius: 0.75rem;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(214 84% 56%), hsl(214 84% 70%));
+    --gradient-surface: linear-gradient(135deg, hsl(0 0% 100%), hsl(210 16% 98%));
+    --gradient-node: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(210 16% 98%) 100%);
 
-    --sidebar-primary: 240 5.9% 10%;
+    /* Shadows */
+    --shadow-node: 0 4px 12px hsl(210 12% 16% / 0.08), 0 2px 4px hsl(210 12% 16% / 0.04);
+    --shadow-node-selected: 0 8px 24px hsl(214 84% 56% / 0.2), 0 4px 8px hsl(214 84% 56% / 0.1);
+    --shadow-panel: 0 8px 32px hsl(210 12% 16% / 0.08);
 
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Transitions */
+    --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Core Colors - Dark mode */
+    --background: 210 12% 6%;
+    --foreground: 210 20% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 210 12% 8%;
+    --card-foreground: 210 20% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 210 12% 8%;
+    --popover-foreground: 210 20% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    /* Pipeline Primary - Brighter blue for dark mode */
+    --primary: 214 84% 65%;
+    --primary-foreground: 210 12% 6%;
+    --primary-glow: 214 84% 80%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    /* Pipeline Secondary - Dark gray */
+    --secondary: 210 12% 12%;
+    --secondary-foreground: 210 20% 95%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 210 12% 10%;
+    --muted-foreground: 210 8% 60%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 214 84% 20%;
+    --accent-foreground: 214 84% 80%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    /* Status Colors - Dark mode adjusted */
+    --success: 142 76% 45%;
+    --success-foreground: 210 12% 6%;
+    --warning: 38 92% 60%;
+    --warning-foreground: 210 12% 6%;
+    --destructive: 0 84% 65%;
+    --destructive-foreground: 210 12% 6%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
+    /* Node Colors - Dark mode */
+    --node-default: 210 12% 10%;
+    --node-selected: 214 84% 65%;
+    --node-error: 0 84% 65%;
+    --node-success: 142 76% 45%;
+
+    /* Pipeline Specific - Dark mode */
+    --pipeline-grid: 210 12% 8%;
+    --pipeline-connection: 214 84% 65%;
+    --pipeline-connection-invalid: 0 84% 65%;
+    
+    --border: 210 12% 15%;
+    --input: 210 12% 15%;
+    --ring: 214 84% 65%;
+
+    /* Gradients - Dark mode */
+    --gradient-primary: linear-gradient(135deg, hsl(214 84% 65%), hsl(214 84% 80%));
+    --gradient-surface: linear-gradient(135deg, hsl(210 12% 8%), hsl(210 12% 12%));
+    --gradient-node: linear-gradient(145deg, hsl(210 12% 10%) 0%, hsl(210 12% 8%) 100%);
+
+    /* Shadows - Dark mode with colored shadows */
+    --shadow-node: 0 4px 12px hsl(210 12% 4% / 0.3), 0 2px 4px hsl(210 12% 4% / 0.2);
+    --shadow-node-selected: 0 8px 24px hsl(214 84% 65% / 0.3), 0 4px 8px hsl(214 84% 65% / 0.2);
+    --shadow-panel: 0 8px 32px hsl(210 12% 4% / 0.4);
 }
 
 @layer base {
