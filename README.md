@@ -2,20 +2,20 @@
 
 A sophisticated visual pipeline editor for creating and managing Directed Acyclic Graphs (DAGs) with real-time validation, auto-layout, and interactive node management.
 
-## 🚀 Live Demo
+##  Live Demo
 
 **Deployed Site**: [Live Demo Link](https://your-deployed-url.com)
 
-## 📸 Screenshot
+##  Screenshot
 
-![Uploading image.png…]()
+<img width="1312" height="817" alt="image" src="https://github.com/user-attachments/assets/63f71c40-0b36-4827-b889-324464c546bc" />
 
 
-## 🎥 Demo Video
+##  Demo Video
 
 [Screen Recording Link](https://your-video-link.com) - Complete walkthrough of all features
 
-## ✨ Features
+##  Features
 
 - **Visual Node Editor**: Drag-and-drop interface for creating pipeline nodes
 - **Real-time DAG Validation**: Prevents cycles and invalid connections
@@ -25,7 +25,7 @@ A sophisticated visual pipeline editor for creating and managing Directed Acycli
 - **JSON Export**: Real-time pipeline structure preview
 - **Responsive Design**: Works on desktop and tablet devices
 
-## 🛠 Technologies Used
+##  Technologies Used
 
 ### Core Framework
 - **React 18.3.1** - Modern UI library with hooks
@@ -47,7 +47,7 @@ A sophisticated visual pipeline editor for creating and managing Directed Acycli
 - **Custom Hooks** - useKeyboardShortcuts for keyboard interactions
 - **Class Variance Authority** - Component variant management
 
-## 🏗 Architecture Overview
+##  Architecture Overview
 
 ```
 src/
@@ -67,7 +67,7 @@ src/
     └── Index.tsx               # Main application page
 ```
 
-## 🔧 Technical Decisions
+##  Technical Decisions
 
 ### Why React Flow?
 - **Mature Library**: Battle-tested for graph visualization
@@ -90,7 +90,7 @@ src/
 - **React Flow Hooks**: Leverages built-in state management
 - **Local State**: No need for complex global state management
 
-## 🚀 Setup Instructions
+##  Setup Instructions
 
 ### Prerequisites
 - Node.js (v16 or higher)
@@ -130,7 +130,7 @@ npm run preview  # Preview production build
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
 
-## 🎯 How to Use
+##  How to Use
 
 1. **Add Nodes**: Click "Add Node" button and enter a name
 2. **Connect Nodes**: Drag from one node's handle to another
@@ -142,7 +142,7 @@ npm run preview  # Preview production build
    - `Ctrl/Cmd + A`: Add new node
    - `Ctrl/Cmd + L`: Auto layout
 
-## 🔍 Key Components Explained
+##  Key Components Explained
 
 ### PipelineEditor.tsx
 - Main orchestrator component
@@ -165,7 +165,7 @@ npm run preview  # Preview production build
 - Calculates optimal node placement
 - Maintains proper spacing
 
-## 🚧 Challenges Faced & Solutions
+##  Challenges Faced & Solutions
 
 ### 1. Cycle Detection in Real-time
 **Challenge**: Implementing efficient cycle detection for large graphs
@@ -197,7 +197,7 @@ npm run preview  # Preview production build
 **Solution**: Separate validation panel with clear error messages
 **Learning**: User experience should guide technical implementation
 
-## 📚 References & Resources
+##  References & Resources
 
 ### Documentation
 - [React Flow Documentation](https://reactflow.dev/)
@@ -220,7 +220,7 @@ npm run preview  # Preview production build
 - [Lucide React Icons](https://lucide.dev/)
 - [Class Variance Authority](https://cva.style/docs)
 
-## 🏆 Interview Talking Points
+##  Interview Talking Points
 
 ### Technical Skills Demonstrated
 - **React Ecosystem**: Hooks, TypeScript, modern patterns
