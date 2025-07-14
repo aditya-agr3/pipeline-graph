@@ -11,10 +11,6 @@ A sophisticated visual pipeline editor for creating and managing Directed Acycli
 <img width="1312" height="817" alt="image" src="https://github.com/user-attachments/assets/63f71c40-0b36-4827-b889-324464c546bc" />
 
 
-##  Demo Video
-
-[Screen Recording Link](https://your-video-link.com) - Complete walkthrough of all features
-
 ##  Features
 
 - **Visual Node Editor**: Drag-and-drop interface for creating pipeline nodes
