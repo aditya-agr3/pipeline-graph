@@ -5,18 +5,11 @@ A sophisticated visual pipeline editor for creating and managing Directed Acycli
 ## 🚀 Live Demo
 
 **Deployed Site**: [Live Demo Link](https://your-deployed-url.com)
-**Project URL**: https://lovable.dev/projects/1cce382c-b677-41a3-99d0-e0981974ccd1
 
-## 📸 Screenshots
+## 📸 Screenshot
 
-![Pipeline Editor Main Interface](screenshots/main-interface.png)
-*Main pipeline editor with node creation and validation panel*
+![Uploading image.png…]()
 
-![Node Connection Flow](screenshots/node-connections.png)
-*Interactive node connections with real-time DAG validation*
-
-![Auto Layout Feature](screenshots/auto-layout.png)
-*Automatic graph layout using Dagre algorithm*
 
 ## 🎥 Demo Video
 
@@ -246,21 +239,15 @@ npm run preview  # Preview production build
 
 ---
 
-**Built with ❤️ using Lovable - AI-powered development platform**
 
 ## How can I edit this code?
 
 There are several ways of editing your application.
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/1cce382c-b677-41a3-99d0-e0981974ccd1) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
 
 **Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+If you want to work locally using your own IDE, you can clone this repo and push changes. 
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
@@ -303,15 +290,3 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/1cce382c-b677-41a3-99d0-e0981974ccd1) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
